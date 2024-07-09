@@ -1,31 +1,28 @@
 import React from 'react'
 import styles from "./styles.module.css"
+import bmi from "../../public/bmi.png"
+import Image from 'next/image'
 import Link from "next/link"
 import { FaHeartbeat } from "react-icons/fa";
 
 function Navbar() {
   return (
-<nav className={`${styles.bg} ${styles.font} flex justify-around items-center   mx-auto`}>
-  
- 
-    <div >
-    {<FaHeartbeat className='text-2xl' />}
-    </div>
+<nav className={`bg-red-400 flex items-center h-12 text-lg sm:justify-between justify-evenly  `}>
+  <div className='sm:pl-10'>
     
-   <ul className= {`flex  items-center gap-4 ${styles.font}`} >
-    <li>
-    <Link className='hover:text-cyan-100' href="./">Ana Sayfa</Link>
-    </li>
-    <li>
-    <Link className='hover:text-cyan-100' href="./">Vercel</Link>
-    </li>
-    <li>
-    <Link  className='hover:text-cyan-100'href="./">Ana Sayfa</Link>
-    </li>
-
-   </ul>
- 
-   
+    
+  <Image
+          src={bmi}
+          alt="BMI Logo"
+          width={90}
+          height={50}
+        />
+  </div>
+  <div  >
+   <Link className='sm:pr-10 pr-3 hover:text-gray-700 pl-3' href="./">Ana Sayfa</Link>
+   <Link className='sm:pr-10 pr-3 hover:text-gray-700' href="./">Beslenme</Link>
+    <Link className='sm:pr-10 hover:text-gray-700 ' href="./">İletişim</Link>
+  </div>
 </nav>
   )
 }
