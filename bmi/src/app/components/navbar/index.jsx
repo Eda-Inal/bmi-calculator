@@ -17,7 +17,7 @@ function Navbar() {
     <Link className='hover:text-cyan-100' href="./">Ana Sayfa</Link>
     </li>
     <li>
-    <Link className='hover:text-cyan-100' href="./">Ana Sayfa</Link>
+    <Link className='hover:text-cyan-100' href="./">Vercel</Link>
     </li>
     <li>
     <Link  className='hover:text-cyan-100'href="./">Ana Sayfa</Link>
