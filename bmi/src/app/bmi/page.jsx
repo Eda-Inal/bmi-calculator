@@ -6,6 +6,7 @@ import styles from "./styles.module.css"
 import { useState } from "react";
 import { FaExclamationCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
+import { FaExclamation } from "react-icons/fa";
 
 
 
@@ -80,8 +81,19 @@ const calculate = () => {
       
 
       <div className='2/5'>
-        <div className='flex flex-col  mt-20 text-xl'>
+        <div className='flex flex-col bg-green-300 sm:p-10 border-2 border-green-400 rounded-lg mt-12 text-xl'>
+          <div className='flex flex-row justify-center'>
+          <h1 className='mb-8 '>Hadi gel BMI ölçelim </h1>
+          <span>
+          <FaExclamation className='text-red-400' />
+          </span>
+          </div>
+       
+
+        
+       
           <div className='flex flex-row  mb-10'>
+          
             <div className='sm:w-1/2 w-1/5  ml-20  sm:ml-0 pr-2'>Boy:</div>
             <div>
               <input type="text"
