@@ -36,27 +36,8 @@ function Beslenme() {
       
       </div>
     </div>
-    <h1 className='sm:text-2xl text-xl text-center mt-10'>Peki sağlıklı beslenmek neden bu kadar önemli?</h1>
-    < div className=' flex sm:flex-row items-center justify-between flex-col'>
-        <div className='w-1/4'>
-        <Image
-        src={skin}
-        alt='skin'
-        />
-        </div>
-        <div className='w-1/4'>
-        <Image
-        src={hair}
-        alt='hair'
-        />
-        </div>
-        <div className='w-1/4'>
-        <Image
-        src={body}
-        alt='body'
-        />
-        </div>
-    </div>
+    
+    
 
     </div>
   

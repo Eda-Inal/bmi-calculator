@@ -1,5 +1,5 @@
 import React from 'react'
-import bmi from "../public/bmi.png"
+import bmi from "../public/bmmi.png"
 import Image from 'next/image'
 import Link from "next/link"
 
@@ -13,7 +13,7 @@ function Navbar() {
   <Image
           src={bmi}
           alt="BMI Logo"
-          width={90}
+          width={60}
           height={50}
         />
   </div>
