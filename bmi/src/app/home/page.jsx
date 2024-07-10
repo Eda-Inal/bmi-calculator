@@ -131,11 +131,14 @@ const calculate = () => {
       )}
       {bmiResult && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-green-300 text-black p-4 rounded relative w-80">
+          <div className="bg-green-400 text-black p-4 rounded relative w-80">
+            <p>
+            BMI Değeriniz: <br />
+             {bmiResult.bmi} ({bmiResult.category})
+            </p>
             
-            BMI Değeriniz: {bmiResult.bmi} ({bmiResult.category})
             <button onClick={closeBmiResult} className="absolute top-2 right-2">
-              <IoMdCloseCircle size={24} />
+              <IoMdCloseCircle className='text-red-400' size={24} />
             </button>
           </div>
         </div>
