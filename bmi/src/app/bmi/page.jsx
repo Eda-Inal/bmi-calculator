@@ -2,7 +2,6 @@
 import React from 'react'
 import body from '../public/body.png';
 import Image from 'next/image';
-import styles from "./styles.module.css"
 import { useState } from "react";
 import { FaExclamationCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
