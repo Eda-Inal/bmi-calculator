@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import body from '../public/human.png';
+import body from '../public/body.png';
 import Image from 'next/image';
 import styles from "./styles.module.css"
 import { useState } from "react";
@@ -69,9 +69,10 @@ const calculate = () => {
 };
 
   return (
+    
     <div className='flex sm:flex-row flex-col justify-center text-2xl mt-10 '>
-      <div className='w-2/5 sm:mx-0 mx-auto  sm:mt-20 md:mt-16'>
-        < Image className='sm:w-3/5 w-3/5'
+      <div className='w-2/5 sm:mx-0 mx-auto hidden sm:block  sm:mt-20 md:mt-16'>
+        < Image className='sm:w-3/5 w-4/5'
           src={body}
           alt='body'
         />
@@ -81,7 +82,7 @@ const calculate = () => {
       
 
       <div className='2/5'>
-        <div className='flex flex-col bg-green-300 sm:p-10 border-2 border-green-400 rounded-lg mt-12 text-xl'>
+        <div className='flex flex-col mx-6 sm:mx-0 bg-green-300 sm:p-10 border-2 border-green-400 rounded-lg mt-12 text-xl'>
           <div className='flex flex-row justify-center'>
           <h1 className='mb-8 '>Hadi gel BMI ölçelim </h1>
           <span>
@@ -125,8 +126,8 @@ const calculate = () => {
           </div>
           
           <div className='mt-2 sm:ml-36 flex justify-center'>
-            <button class="bg-red-400 hover:bg-red-300 text-white  py-2 px-4 border border-red-400 rounded" onClick={handleBtn}>
-              Button
+            <button class="bg-red-400 hover:bg-red-300 text-black  py-2 px-4 border border-red-400 rounded" onClick={handleBtn}>
+              Hesapla
             </button>
           </div>
         </div>

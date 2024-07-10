@@ -4,7 +4,7 @@ import Link from 'next/link'
 function Contact() {
   return (
     <div>
-     <div className='bg-red-100  text-black border-2 rounded-lg border-gray  sm:mt-5 sm:w-2/3 w-full h-1/4 text-center mx-auto'>
+     <div className='bg-green-300  text-black border-2 rounded-lg border-gray  sm:mt-5  mt-3 sm:w-2/3 w-full h-1/4 text-center mx-auto'>
    <div className=' mt-5'>
 <h1 className='text-3xl text- mb-3'>Vücut Kitle İndeksi (BMI) Nedir? Nasıl Hesaplanır?</h1>
 <div>
@@ -22,8 +22,8 @@ Sağlık uzmanları, ağırlık türlerini teşhis etmeye yardımcı olması ama
    </div>
     </div> 
     <div className='flex flex-col items-center justify-center mt-10'>
-    <button className='bg-red-400 hover:bg-red-300 rounded-lg p-3 text-white'>
-      <Link href='/home'> BMI HESAPLA</Link>
+    <button className='bg-red-400 hover:bg-red-300 rounded-lg p-4 text-xl text-black'>
+      <Link href='/'> BMI HESAPLA</Link>
      
       </button>
     </div>

@@ -38,12 +38,12 @@ function Beslenme() {
       
       </div>
     </div>
-    <h1 className='flex sm:mt-8 mt-6  text-2xl  w-1/4 mx-auto justify-center'>1 Günlük Örnek Diyet Listesi
+    <h1 className='flex sm:mt-8 mt-6  text-2xl   mx-auto justify-center'>1 Günlük Örnek Diyet Listesi
     <span><FaRegSmileBeam className='ml-2' /></span>
     </h1>
     <div className='flex sm:flex-row flex-col justify-center px-10 sm:mt-10 mt-6'>
       <div>
-<div className='sm:mr-10'> 
+<div className='sm:mr-10 mb-5'> 
 <div className='flex items-center'>
         <h1 className='text-2xl border-b-2 border-black'>Sabah Kahvaltısı</h1>
         <Image className='ml-2' src={breakfast} alt="healthy food" width={50} />
@@ -59,7 +59,7 @@ function Beslenme() {
       </div>
       <div>
       <div>
-<div className='sm:mr-10'> 
+<div className='sm:mr-10 mb-5' > 
 <div className='flex items-center'>
         <h1 className='text-2xl border-b-2 border-black'>Öğlen Yemeği</h1>
         <Image className='ml-2' src={lunch} alt="healthy food" width={50} />
