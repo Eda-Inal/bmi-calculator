@@ -1,9 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import goodfood from '../public/plate2.jpg';
-import skin from '../public/skin.jpg'
-import hair from '../public/hair.webp'
-import body from '../public/body.png'
+import breakfast from '../public/breakfast.png'
+import lunch from '../public/lunch.png'
+import dinner from '../public/dinner.png'
+import { FaRegSmileBeam } from "react-icons/fa";
+
 
 function Beslenme() {
   return (
@@ -36,8 +38,60 @@ function Beslenme() {
       
       </div>
     </div>
-    
-    
+    <h1 className='flex sm:mt-8 mt-6  text-2xl  w-1/4 mx-auto justify-center'>1 Günlük Örnek Diyet Listesi
+    <span><FaRegSmileBeam className='ml-2' /></span>
+    </h1>
+    <div className='flex sm:flex-row flex-col justify-center px-10 sm:mt-10 mt-6'>
+      <div>
+<div className='sm:mr-10'> 
+<div className='flex items-center'>
+        <h1 className='text-2xl border-b-2 border-black'>Sabah Kahvaltısı</h1>
+        <Image className='ml-2' src={breakfast} alt="healthy food" width={50} />
+      </div>
+<ul className='list-disc'>
+  <li>1 tane haşlanmış yumurta</li>
+  <li>1 kibrit kutusu kadar az yağlı peynir</li>
+  <li>5-6 adet zeytin</li>
+  <li>Domates, salatalık, yeşillik (serbest)</li>
+</ul>
+
+</div>
+      </div>
+      <div>
+      <div>
+<div className='sm:mr-10'> 
+<div className='flex items-center'>
+        <h1 className='text-2xl border-b-2 border-black'>Öğlen Yemeği</h1>
+        <Image className='ml-2' src={lunch} alt="healthy food" width={50} />
+      </div>
+<ul className='list-disc'>
+  <li>3 köfte büyüklüğü kadar et/tavuk/hindi/balık</li>
+  <li>1 ince dilim ekmek (tam buğday, bol tahıllı, çavdar)</li>
+  <li>4 yemek kaşığı yoğurt veya 2 su bardağı ayran</li>
+  <li>Sınırsız yağsız salata</li>
+</ul>
+
+</div>
+      </div>
+      </div>
+      <div>
+      <div>
+<div> 
+<div className='flex items-center'>
+        <h1 className='text-2xl border-b-2 border-black'>Akşam Yemeği</h1>
+        <Image className='ml-2' src={dinner} alt="healthy food" width={50} />
+      </div>
+<ul className='list-disc'>
+  <li>8-10 yemek kaşığı sebze yemeği</li>
+  <li>6-7 yemek kaşığı bulgur pilavı</li>
+  <li>2-3 yemek kaşığı cacık</li>
+  <li>Salata (serbest)</li>
+</ul>
+
+</div>
+      </div>
+      </div>
+    </div>
 
     </div>
   

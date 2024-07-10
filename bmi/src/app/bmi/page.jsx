@@ -15,18 +15,30 @@ function Home() {
 const[age,setAge] = useState("");
 const [alert,setAlert] = useState(false);
 const [bmiResult, setBmiResult] = useState(null);
+const [invalidInputAlert, setInvalidInputAlert] = useState(false);
 const handleBtn = () => {
   if (height === "" || weight === "" || age === "") {
     setAlert(true);
+  } 
+
+  else if (isNaN(height) || isNaN(weight) || isNaN(age)) {
+    setInvalidInputAlert(true);
   } else {
     setAlert(false);
+    setInvalidInputAlert(false);
     calculate();
-    
   }
 };
 const closeAlert = () => {
   setAlert(false);
 };
+const closeInvalidInputAlert = () => {
+  setInvalidInputAlert(false);
+  setAge("");
+    setHeight("");
+    setWeight("");
+};
+
 const closeBmiResult = () => {
   setBmiResult(null);
   setAge("");
@@ -99,16 +111,8 @@ const calculate = () => {
             </div>
 
           </div>
-          <div className='flex flex-row'>
-            <div className='sm:w-1/2 w-1/5 ml-20  sm:ml-0  pr-2'>Cinsiyet</div>
-            <div >
-              <select className='w-40 border-2 border-gray-500 ' value="Kadın">
-                <option value="erkek">Erkek</option>
-                <option value="kadin">Kadın</option>
-              </select>
-            </div>
-          </div>
-          <div className='mt-10 sm:ml-36 flex justify-center'>
+          
+          <div className='mt-2 sm:ml-36 flex justify-center'>
             <button class="bg-red-400 hover:bg-red-300 text-white  py-2 px-4 border border-red-400 rounded" onClick={handleBtn}>
               Button
             </button>
@@ -124,6 +128,17 @@ const calculate = () => {
             <FaExclamationCircle className="inline-block mr-2" />
             Oops, bu alanları doldurmanız gerekmektedir!
             <button onClick={closeAlert} className="absolute top-2 right-2">
+              <IoMdCloseCircle size={24} />
+            </button>
+          </div>
+        </div>
+      )}
+        {invalidInputAlert && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-red-400 text-white p-4 rounded relative w-80">
+            <FaExclamationCircle className="inline-block mr-2" />
+            Geçersiz sayı girdiniz!
+            <button onClick={closeInvalidInputAlert} className="absolute top-2 right-2">
               <IoMdCloseCircle size={24} />
             </button>
           </div>

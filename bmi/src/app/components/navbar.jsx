@@ -18,10 +18,9 @@ function Navbar() {
         />
   </div>
   <div  >
-   <Link className='sm:pr-10 pr-3 hover:text-green-200 pl-3' href="/home">Ana Sayfa</Link>
-   <Link className='sm:pr-10 pr-3 hover:text-green-200' href="/beslenme">Beslenme</Link>
-
-    <Link className='sm:pr-10  hover:text-green-200 ' href="/contact">İletişim</Link>
+   <Link className='sm:pr-10 pr-2 hover:text-green-200 pl-3' href="/">BMI</Link>
+    <Link className='sm:pr-10 pr-2  hover:text-green-200 ' href="/bminedir">BMI NEDİR?</Link>
+    <Link className='sm:pr-10  hover:text-green-200' href="/beslenme">DİYET</Link>
   </div>
 </nav>
   )
