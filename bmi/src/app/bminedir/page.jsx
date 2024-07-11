@@ -22,7 +22,7 @@ Sağlık uzmanları, ağırlık türlerini teşhis etmeye yardımcı olması ama
    </div>
     </div> 
     <div className='flex flex-col items-center justify-center mt-10'>
-    <button className='bg-red-400 hover:bg-red-300 rounded-lg p-4 text-xl text-black'>
+    <button className='bg-red-400 hover:bg-red-300 rounded-lg p-4 text-xl text-black mb-6 md:mb-16 lg:mb-20 xl:mb-24  2xl:mb-36 '>
       <Link href='/'> BMI HESAPLA</Link>
      
       </button>

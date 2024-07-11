@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FaExclamationCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaExclamation } from "react-icons/fa";
+import bmi from "../public/bmi.png"
 
 
 
@@ -77,10 +78,18 @@ const calculate = () => {
         />
 
       </div>
+      <div className='w-2/5 sm:mx-0 mx-auto block sm:hidden ' >
+        < Image className=' w-4/5'
+          src={bmi}
+          alt='body'
+        />
+
+      </div>
+
 
       
 
-      <div className='2/5'>
+      <div className='mb-10 sm:mb-20'>
         <div className='flex flex-col mx-6 sm:mx-0 bg-green-300 sm:p-10 border-2 border-green-400 rounded-lg mt-12 text-xl'>
           <div className='flex flex-row justify-center'>
           <h1 className='mb-8 '>Hadi gel BMI ölçelim </h1>
@@ -164,7 +173,7 @@ const calculate = () => {
              {bmiResult.bmi} ({bmiResult.category})
             </p>
             
-            <button onClick={closeBmiResult} className="absolute top-2 right-2">
+            <button onClick={closeBmiResult} className="absolute  top-2 right-2">
               <IoMdCloseCircle className='text-red-400' size={24} />
             </button>
           </div>

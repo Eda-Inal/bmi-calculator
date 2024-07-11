@@ -9,7 +9,7 @@ import Footer from '../components/footer';
 
 function Beslenme() {
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col  '>
       <div className='flex sm:flex-row flex-col justify-center items-center mx:auto sm:mx-auto sm:justify-center mt-12'>
         <div className='sm:w-1/3 w-1/2'>
           <div className='w-full sm:w-3/4 mt-10 sm:mt-0'>
@@ -37,7 +37,7 @@ function Beslenme() {
       </h1>
       <div className='flex sm:flex-row flex-col justify-center px-10 sm:mt-10 mt-6'>
         <div>
-          <div className='sm:mr-10 mb-5'>
+          <div className='sm:mr-10 mb-5 flex flex-col items-center'>
             <div className='flex items-center'>
               <h1 className='text-2xl border-b-2 border-black'>Sabah Kahvaltısı</h1>
               <Image className='ml-2' src={breakfast} alt='healthy food' width={50} />
@@ -51,7 +51,7 @@ function Beslenme() {
           </div>
         </div>
         <div>
-          <div className='sm:mr-10 mb-5'>
+          <div className='sm:mr-10 flex flex-col items-center mb-5'>
             <div className='flex items-center'>
               <h1 className='text-2xl border-b-2 border-black'>Öğlen Yemeği</h1>
               <Image className='ml-2' src={lunch} alt='healthy food' width={50} />
@@ -65,12 +65,12 @@ function Beslenme() {
           </div>
         </div>
         <div>
-          <div>
-            <div className='flex items-center'>
+          <div className='flex flex-col items-center'>
+            <div className='flex items-center '>
               <h1 className='text-2xl border-b-2 border-black'>Akşam Yemeği</h1>
               <Image className='ml-2' src={dinner} alt='healthy food' width={50} />
             </div>
-            <ul className='list-disc'>
+            <ul className='list-disc mb-6  sm:mb-12 '>
               <li>8-10 yemek kaşığı sebze yemeği</li>
               <li>6-7 yemek kaşığı bulgur pilavı</li>
               <li>2-3 yemek kaşığı cacık</li>
@@ -79,7 +79,7 @@ function Beslenme() {
           </div>
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 }
