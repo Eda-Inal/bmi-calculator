@@ -89,7 +89,7 @@ const calculate = () => {
 
       
 
-      <div className='mb-10 sm:mb-20'>
+      <div className='mb-16 sm:mb-20'>
         <div className='flex flex-col mx-6 sm:mx-0 bg-green-300 sm:p-10 border-2 border-green-400 rounded-lg mt-12 text-xl'>
           <div className='flex flex-row justify-center'>
           <h1 className='mb-8 '>Hadi gel BMI ölçelim </h1>
