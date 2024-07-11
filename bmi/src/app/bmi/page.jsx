@@ -89,8 +89,8 @@ const calculate = () => {
 
       
 
-      <div className='mb-16 sm:mb-20'>
-        <div className='flex flex-col mx-6 sm:mx-0 bg-green-300 sm:p-10 border-2 border-green-400 rounded-lg mt-12 text-xl'>
+      <div className='mb-20 sm:mb-20'>
+        <div className='flex flex-col mx-6 sm:mx-0 bg-green-300 sm:p-10 border-2 border-green-200 rounded-lg mt-12 text-xl'>
           <div className='flex flex-row justify-center'>
           <h1 className='mb-8 '>Hadi gel BMI ölçelim </h1>
           <span>
@@ -167,7 +167,7 @@ const calculate = () => {
       )}
       {bmiResult && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-green-400 text-black p-4 rounded relative w-80">
+          <div className="bg-green-300 text-black p-4 rounded relative w-80">
             <p>
             BMI Değeriniz: <br />
              {bmiResult.bmi} ({bmiResult.category})

@@ -6,7 +6,7 @@ import Link from "next/link"
 
 function Navbar() {
   return (
-<nav className={`bg-red-400 flex items-center text-white sm:text-2xl text-xl h-16 sm:justify-between justify-evenly  `}>
+<nav className={`bg-red-400 flex items-center text-gray-800 sm:text-2xl text-xl h-16 sm:justify-between justify-evenly  `}>
   <div className='sm:pl-10'>
     
     
